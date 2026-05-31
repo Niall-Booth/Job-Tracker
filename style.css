@@ -1,0 +1,121 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #0F172A;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+body{
+    padding: 5%;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1em;
+}
+
+h4{
+    font-size: .7em;
+}
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#burger-button,
+#add-button {
+    width: 30px;
+    height: 30px;
+}
+
+#add-button{
+    border-radius: 50%;
+    background-color: #0A5EB0;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+#burger-button{
+    color: white;
+    background-color: #0F172A;
+    border: none;
+    font-size: 20px;
+}
+
+#dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30dvh;
+    gap: 10px;
+}
+
+#dashboard div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.dashboard-icons{
+    text-align: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 55px;
+}
+
+#application{
+    color: #388DF8;
+    background-color: #1e2650;
+}
+
+#interview{
+    color: #FBBF24;
+    background-color: #6b4f08;
+}
+
+#offers{
+    color: #4ADE80;
+    background-color: #1d3f26;
+}
+
+#rejected{
+    color: #F87171;
+    background-color: #351111;
+}
+
+.heading{
+    font-size: 1em;
+}
+
+
+.heading-fancy{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: light;
+  font-variation-settings:
+    "wdth" 100;
+}
