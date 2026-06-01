@@ -18,30 +18,53 @@
     </nav>
     <h2 class="heading heading-fancy">Dashboard</h2>
     <section id="dashboard">
-        <div class="heading-fancy">
+        <div class="heading-fancy div-styles">
             <i id="application" class="bi bi-file-text dashboard-icons"></i>
             <h3>Applications</h3>
-            <h2>43</h3>
+            <h2>0</h3>
             <h4>Total Applied</h4>
         </div>
-        <div class="heading-fancy">
+        <div class="heading-fancy div-styles">
             <i id="interview" class="bi bi-person dashboard-icons"></i>
             <h3>Interviewing</h3>
-            <h2>43</h3>
+            <h2>0</h3>
             <h4>In Progress</h4>
         </div>
-        <div class="heading-fancy">
+        <div class="heading-fancy div-styles">
             <i id="offers" class="bi bi-file-text dashboard-icons"></i>
             <h3>Offers</h3>
-            <h2>43</h3>
+            <h2>0</h3>
             <h4>Offers Recieved</h4>
         </div>
-        <div class="heading-fancy">
+        <div class="heading-fancy div-styles">
             <i id="rejected" class="bi bi-x-circle dashboard-icons"></i>
             <h3>Rejected</h3>
-            <h2>43</h3>
+            <h2>0</h3>
             <h4>Not Sucessful</h4>
         </div>
     </section>
+    <div id="pie-chart-div" class="div-styles">
+        <canvas id="pie-chart"></canvas>
+    </div>
+    <section id="recent-applications">
+        <div id="application-section-heading">
+            <h3>Recent Applications</h3>
+            <button id="view-all">View All</button>
+        </div>
+        <div class="div-styles application-display">
+            <div>
+                <h4 class="job-title">Office Administrator</h4>
+                <h4 class="company-name">MMP Fire and Security</h4>
+            </div>
+            <div>
+                <span class="status"><strong>Rejected</strong></span>
+                <h5 class="date">May 31 2026</h5>
+            </div>
+            <span>❯</span>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="pie-chart.js"></script>
 </body>
 </html>

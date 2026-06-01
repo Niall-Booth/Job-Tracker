@@ -60,7 +60,6 @@ nav{
 #dashboard{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 30dvh;
     gap: 10px;
 }
 
@@ -110,7 +109,6 @@ nav{
     font-size: 1em;
 }
 
-
 .heading-fancy{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -118,4 +116,73 @@ nav{
   font-style: light;
   font-variation-settings:
     "wdth" 100;
+}
+
+.div-styles{
+    background-color: #1E293B;
+    border-radius: 30px;
+    padding: 2%;
+    box-sizing: border-box;
+    border: 1px solid #334155;
+}
+
+.application-display{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+    align-items: center;
+}
+
+.application-display div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.status{
+    border-radius: 30px;
+    font-size: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 2% 0;
+}
+
+#pie-chart-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+#recent-applications{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #0F172A;
+    border: 1px solid #334155;
+    border-radius: 30px;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+#application-section-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    margin-bottom: 4%;
+}
+
+#view-all{
+    background-color: #0F172A;
+    border: none;
+    color: #388DF8;
 }
