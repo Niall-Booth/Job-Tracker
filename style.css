@@ -36,6 +36,11 @@ nav{
     color: white;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 #burger-button,
 #add-button {
     width: 30px;
@@ -151,11 +156,20 @@ nav{
 }
 
 #pie-chart-div{
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 200px;
     position: relative;
+}
+
+#total-display{
+    text-align: center;
+    position: absolute;
+    top: 103px;
+    right: 215px;
 }
 
 #recent-applications{

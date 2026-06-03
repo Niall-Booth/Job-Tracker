@@ -1,19 +1,13 @@
 const ctx = document.getElementById("pie-chart");
 
-const data = [];
-
-$(document).ready(function () {
-  $("#dashboard div h2").each(function(){
-    data.push(Number($(this).text()))
-    })
-
+export  function createPieChart(stats) {
     new Chart(ctx, {
     type: 'doughnut',
     data: {
         labels: ['Applied', 'Interviewing', 'Offers', 'Rejected'],
         datasets: [{
         label: 'Application Status',
-        data: data,
+        data: stats,
         backgroundColor: [
             '#388DF8',
             '#FBBF24',
@@ -42,4 +36,4 @@ $(document).ready(function () {
         }
     }
     });
-});
+};
