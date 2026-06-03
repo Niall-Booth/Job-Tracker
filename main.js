@@ -386,11 +386,12 @@ request.onsuccess = (event) =>{
             companyNameHeading.text(company);
             strongTag.text(status);
             dateHeading.text(date);
-            selectSpan.text("❯")
-            locationheading.text(location)
+            selectSpan.text("❯");
+            locationheading.text(location);
 
             subDiv1.append(jobTitleHeading);
-            subDiv1.append(companyNameHeading)
+            subDiv1.append(companyNameHeading);
+            subDiv1.append(locationheading);
             statusSpan.append(strongTag);
             subdDiv2.append(statusSpan);
             subdDiv2.append(dateHeading);

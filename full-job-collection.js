@@ -54,7 +54,7 @@ request.onsuccess = (event) => {
             dateHeading.text(date);
             selectSpan.text("❯");
 
-            subDiv1.append(jobTitleHeading, companyNameHeading);
+            subDiv1.append(jobTitleHeading, companyNameHeading, locationHeading);
             statusSpan.append(strongTag);
 
             subDiv2.append(statusSpan, dateHeading);
