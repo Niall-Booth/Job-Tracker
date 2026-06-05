@@ -11,50 +11,68 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav>
-        <button id="burger-button">☰</button>
-        <h1 class="heading-fancy"><a href="index.html">Job Tracker</a></h1>
-        <button id="add-button">+</button>
-    </nav>
-    <h2 class="heading heading-fancy">Dashboard</h2>
-    <section id="dashboard">
-        <div class="heading-fancy div-styles">
-            <i id="application" class="bi bi-file-text dashboard-icons"></i>
-            <h3>Applications</h3>
-            <h2 id="applied-stat">0</h2>
-            <h4>Total Applied</h4>
+    <main>
+        <nav>
+            <button id="burger-button">☰</button>
+            <h1 class="heading-fancy"><a href="index.html">Job Tracker</a></h1>
+            <button id="add-button">+</button>
+        </nav>
+        <h2 class="heading heading-fancy">Dashboard</h2>
+        <section id="dashboard">
+            <div class="heading-fancy div-styles">
+                <i id="application" class="bi bi-file-text dashboard-icons"></i>
+                <h3>Applications</h3>
+                <h2 id="applied-stat">0</h2>
+                <h4>Total Applied</h4>
+            </div>
+            <div class="heading-fancy div-styles">
+                <i id="interview" class="bi bi-person dashboard-icons"></i>
+                <h3>Interviewing</h3>
+                <h2 id="interview-stat">0</h2>
+                <h4>In Progress</h4>
+            </div>
+            <div class="heading-fancy div-styles">
+                <i id="offers" class="bi bi-file-text dashboard-icons"></i>
+                <h3>Offers</h3>
+                <h2 id="offer-stat">0</h2>
+                <h4>Offers Recieved</h4>
+            </div>
+            <div class="heading-fancy div-styles">
+                <i id="rejected" class="bi bi-x-circle dashboard-icons"></i>
+                <h3>Rejected</h3>
+                <h2 id="rejected-stat">0</h2>
+                <h4>Not Sucessful</h4>
+            </div>
+        </section>
+        <div id="pie-chart-div" class="div-styles">
+            <canvas id="pie-chart"></canvas>
+            <h2 id="total-display"></h2>
         </div>
-        <div class="heading-fancy div-styles">
-            <i id="interview" class="bi bi-person dashboard-icons"></i>
-            <h3>Interviewing</h3>
-            <h2 id="interview-stat">0</h2>
-            <h4>In Progress</h4>
-        </div>
-        <div class="heading-fancy div-styles">
-            <i id="offers" class="bi bi-file-text dashboard-icons"></i>
-            <h3>Offers</h3>
-            <h2 id="offer-stat">0</h2>
-            <h4>Offers Recieved</h4>
-        </div>
-        <div class="heading-fancy div-styles">
-            <i id="rejected" class="bi bi-x-circle dashboard-icons"></i>
-            <h3>Rejected</h3>
-            <h2 id="rejected-stat">0</h2>
-            <h4>Not Sucessful</h4>
-        </div>
-    </section>
-    <div id="pie-chart-div" class="div-styles">
-        <canvas id="pie-chart"></canvas>
-        <h2 id="total-display"></h2>
+        <section id="recent-applications">
+            <div id="application-section-heading">
+                <h3>Recent Applications</h3>
+                <button id="view-all"><a href="job-display.html">View All</a></button>
+            </div>
+        </section>
+    </main>
+    <div id="new-job">
+        <h2 class="heading-fancy">New job application</h2>
+        <form>
+            <label for="job-title">Enter Job Title</label>
+            <input type="text" id="job-title" placeholder="Job Title" required autocomplete="off">
+            <label for="job-title">Enter Company Name</label>
+            <input type="text" id="company-name" placeholder="Enter Company Name" required autocomplete="off">
+            <label for="job-title">Enter Job Status</label>
+            <input type="text" id="status" placeholder="Applied, Interviewing, Offer or Rejected" required autocomplete="off">
+            <label for="job-title">Enter Job Location</label>
+            <input type="text" id="location" placeholder="Job Location" required autocomplete="off">
+            <button type="submit" id="submit-button">Submit</button>
+            <button type="button" id="cancel-button">Cancel</button>
+        </form>
     </div>
-    <section id="recent-applications">
-        <div id="application-section-heading">
-            <h3>Recent Applications</h3>
-            <button id="view-all"><a href="job-display.html">View All</a></button>
-        </div>
-    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/new-job.js"></script>
 </body>
 </html>
