@@ -133,7 +133,7 @@ input{
 #new-job{
     position: absolute;
     top: 100px;
-    left: 50px;
+    left: 40px;
     width: 80%;
     height: 80%;
     align-items: center;
@@ -150,7 +150,7 @@ input{
     margin-bottom: 20px;
 }
 
-#submit-button, #cancel-button{
+#submit-button, #cancel-button, #delete-button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,15 +167,21 @@ input{
     border: 2px solid #4ADE80;
 }
 
-#cancel-button{
+#cancel-button, #delete-button{
     border: 2px solid #F87171;
+}
+
+#delete-button{
+    margin-top: 100px;
+    font-size: 2em;
+    width: 60%;
 }
 
 #submit-button:active{
     background-color: #4ADE80;
 }
 
-#cancel-button:active{
+#cancel-button:active, #delete-button:active{
     background-color: #F87171;
 }
 
